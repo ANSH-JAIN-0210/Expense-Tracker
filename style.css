@@ -1,0 +1,191 @@
+
+body {
+    margin: 50px 250px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.heading {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+}
+.quote {
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+}
+.amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.858);
+}
+
+.amount > div {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inamt {
+    color: green;
+}
+
+.outamt {
+    color: red;
+}
+
+.amt {
+    color: brown;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+    .heading {
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 2em;
+    }
+    .amount {
+        flex-direction: column;
+    }
+    .amount > div {
+        margin: 10px 0;
+    }
+}
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+.transaction {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.transaction label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.transaction input[type="text"],
+.transaction input[type="date"],
+.transaction select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.transaction button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.transaction .inbtn {
+    background-color: rgb(15, 150, 37);
+    color: white;
+}
+
+.transaction .outbtn {
+    background-color: rgb(196, 37, 13);
+    color: white;
+}
+
+.transaction button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+
+    .transaction {
+        padding: 15px;
+    }
+}
+/* .list {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.listing {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+
+    .list {
+        padding: 15px;
+    }
+
+    .listing {
+        font-size: 1.5em;
+    }
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.fetch-category{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+button:hover {
+    background-color: #555;
+}
+.fetch{
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

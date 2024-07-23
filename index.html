@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <center><h1 class="expense">Expense Tracker</h1></center>
+      <p class="qoute">
+        "Tracking your expenses is the first step towards financial freedom.
+        It's not about what you earn, but what you save and how wisely you
+        spend."
+      </p>
+    </div>
+    <div class="amount">
+      <div class="cash-in inamt">Total Cash-In: Rs 0</div>
+      <div class="cash-out outamt">Total Cash-Out: Rs 0</div>
+      <div class="cash">Total Cash: Rs 0</div>
+    </div>
+    <div class="transaction">
+      <label for="amount">Amount: </label>
+      <input
+        type="text"
+        placeholder="Enter the amount"
+        name="amount"
+        id="amount"
+        required
+      />
+      <label for="transaction-name">Transaction Name: </label>
+      <input
+        type="text"
+        placeholder="Enter the transaction name"
+        name="transaction-name"
+        id="transaction-name"
+        required
+      />
+      <label for="category">Choose a Category:</label>
+      <select id="category" name="category" required>
+        <option value="gym">Gym</option>
+        <option value="food">Food</option>
+        <option value="travel">Travel</option>
+        <option value="bills">Bills</option>
+        <option value="others">Others</option>
+      </select>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+      <button class="inbtn" id="inbtn1">Cash In</button>
+      <button class="outbtn" id="outbtn2">Cash Out</button>
+    </div>
+
+    <div class="fetch">
+      <div><h1 class="listing">Transaction History</h1></div>
+      <div class="head">
+        <div class="head1">Amount</div>
+        <div class="head2">Transaction Name</div>
+        <div class="head3">Category</div>
+        <div class="head4">Date</div>
+      </div>
+      <hr>
+      <div class="list" id="transaction-list"></div>
+    </div>
+
+    <div class="fetch">
+      <div><center><h1>Gym Expenses</h1></center></div>
+      <div class="head">
+        <div class="head1">Amount</div>
+        <div class="head2">Transaction Name</div>
+        <div class="head3">Category</div>
+        <div class="head4">Date</div>
+      </div>
+      <div id="gym"></div>
+    </div>
+    <div class="fetch">
+      <div><center><h1>Food Expenses</h1></center></div>
+      <div class="head">
+        <div class="head1">Amount</div>
+        <div class="head2">Transaction Name</div>
+        <div class="head3">Category</div>
+        <div class="head4">Date</div>
+      </div>
+      <div id="food"></div>
+    </div>
+    <div class="fetch"> 
+      <div><center><h1>Travel Expenses</h1></center></div>
+      <div class="head">
+        <div class="head1">Amount</div>
+        <div class="head2">Transaction Name</div>
+        <div class="head3">Category</div>
+        <div class="head4">Date</div>
+      </div>
+      <div id="travel"></div>
+    </div>
+    <div class="fetch">
+      <div><center><h1>Bill Expenses</h1></center></div>
+      <div class="head">
+        <div class="head1">Amount</div>
+        <div class="head2">Transaction Name</div>
+        <div class="head3">Category</div>
+        <div class="head4">Date</div>
+      </div>
+      <div id="bill"></div>
+    </div>
+    <div class="fetch">
+      <div><center><h1>Other Expenses</h1></center></div>
+      <div class="head">
+        <div class="head1">Amount</div>
+        <div class="head2">Transaction Name</div>
+        <div class="head3">Category</div>
+        <div class="head4">Date</div>
+      </div>
+      <div id="other"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
